@@ -1,0 +1,27 @@
+<table class="table" [mfData]="employe" #mf="mfDataTable">
+    <thead>
+      <tr>
+        <th>
+          id
+        </th>
+        <th>
+          Employee Name
+        </th>
+        <th>
+          Employee Salary
+        </th>
+        <th>
+          Employee Age
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employe of mf.data">
+        <td align="center">{{employe.id}}</td>
+        <td align="center"> {{employe.employee_name}}</td>
+        <td align="center" >{{employe.employee_salary}}</td>
+        <td align="center" >{{employe.employee_age}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
